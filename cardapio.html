@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yellowtail&display=swap" 
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="script.js" defer></script>
+    <title>Ilha do paraíso</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <section>
+            <img src="./img/logotrans.webp" alt="Logo Ilha do Paraíso">
+            <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+            <nav class="navbar">
+                <a href="./index.html">Home</a>
+                <a href="./cardapio.html">Cardápio</a>
+                <a href="./index.html#portifolio">Portfólio</a>
+                <a href="./passeio.html">Passeio das 9 Ilhas</a>
+                <a href="./day-use.html">Day Use</a>
+                <a href="./index.html#reservar">Reservar</a>
+            </nav>
+        </section>
+    </header>
+
+    <section class="cardapio-restaurante" id="cardapio">
+        <div class="cardapio-container">
+            <h2>Cardápio do Restaurante</h2>
+            <p>Sabores que acompanham sua experiência na Ilha do Paraíso</p>
+
+            <!-- Botões de Filtro -->
+            <div class="menu-filtros">
+                <button class="filtro-btn active" data-categoria="todos">Todos</button>
+                <button class="filtro-btn" data-categoria="refeicoes">Refeições</button>
+                <button class="filtro-btn" data-categoria="petiscos">Petiscos</button>
+                <button class="filtro-btn" data-categoria="parmegianas">Parmegianas</button>
+                <button class="filtro-btn" data-categoria="porcoes">Porções</button>
+                <button class="filtro-btn" data-categoria="bebidas-sem-alcool">Bebidas Sem Álcool</button>
+                <button class="filtro-btn" data-categoria="bebidas-alcoolicas">Bebidas Alcoólicas</button>
+                <button class="filtro-btn" data-categoria="destilados">Destilados</button>
+                <button class="filtro-btn" data-categoria="drinks-alcool">Drinks com Álcool</button>
+                <button class="filtro-btn" data-categoria="drinks-sem-alcool">Drinks Sem Álcool</button>
+            </div>
+
+            <div class="menu-categorias">
+                <div class="categoria show" data-categoria="refeicoes">
+                    <img src="./img/menu/refeicao.webp">
+                    <h3>Refeições p/ 2 Pessoas</h3>
+                    <ul>
+                        <li>Peixada ao Coco — R$110,00</li>
+                        <li>Peixada Regional — R$110,00</li>
+                        <li>Peixe ao Molho de Tomate — R$110,00</li>
+                        <li>Peixe ao Molho de Camarão — R$150,00</li>
+                        <li>Peixe Frito Posta — R$135,00</li>
+                        <li>Peixe Frito Inteiro Tilápia — R$120,00</li>
+                        <li>Camarão ao Coco — R$130,00</li>
+                        <li>Camarão ao Tomate — R$120,00</li>
+                        <li>Camarão ao Alho e Óleo — R$120,00</li>
+                        <li>Carne de Sol com Queijo — R$150,00</li>
+                        <li>Picanha na Chapa c/ Queijo — R$150,00</li>
+                        <li>Sururu no Coco — R$140,00</li>
+                        <li>Tilápia na Telha — R$130,00</li>
+                        <li>Picanha Australiana — R$170,00</li>
+                    </ul>
+                </div>
+
+                <div class="categoria show" data-categoria="petiscos">
+                    <img src="./img/menu/petiscos.webp">
+                    <h3>Petiscos</h3>
+                    <ul>
+                        <li>Peixe Frito — R$80,00</li>
+                        <li>Agulhinha (porção – 12 unid.) — R$54,00</li>
+                        <li>Isca de Peixe — R$69,00</li>
+                        <li>Isca de Frango — R$50,00</li>
+                        <li>Camarão Crocante — R$89,00</li>
+                        <li>Camarão Acebolado — R$89,00</li>
+                        <li>Camarão ao Molho de Tomate — R$69,00</li>
+                        <li>Carne de Sol c/ Fritas — R$69,90</li>
+                        <li>Sururu no Coco — R$65,00</li>
+                        <li>Patas de Caranguejo c/ Vinagrete (17 unid.) — R$77,00</li>
+                        <li>Bolinho de Queijo de Bacalhau — R$30,00</li>
+                        <li>Pastel (Carne ou Queijo) — R$35,00</li>
+                        <li>Escondidinho de Carne de Sol — R$28,90</li>
+                        <li>Caldinhos (Feijão ou Camarão) — R$10,00</li>
+                        <li>Pastel Meia Porção (4 unid.) — R$20,00</li>
+                    </ul>
+                </div>
+
+                <div class="categoria show" data-categoria="parmegianas">
+                    <img src="./img/menu/parmegiana.webp">
+                    <h3>Parmegianas</h3>
+                    <ul>
+                        <li>Peixe — R$100,00</li>
+                        <li>Frango — R$100,00</li>
+                        <li>Camarão — R$120,00</li>
+                        <li>Carne — R$150,00</li>
+                    </ul>
+                </div>
+
+                <div class="categoria show" data-categoria="porcoes">
+                    <img src="./img/menu/batata.webp">
+                    <h3>Porções</h3>
+                    <ul>
+                        <li>Arroz — R$10,00</li>
+                        <li>Pirão — R$15,00</li>
+                        <li>Feijão — R$13,00</li>
+                        <li>Purê — R$15,00</li>
+                        <li>Batata — R$22,00</li>
+                        <li>Vinagrete — R$10,00</li>
+                        <li>Torresmo (porção) — R$10,00</li>
+                        <li>Ovo de Codorna — R$3,00</li>
+                        <li>Ovo de Galinha Cozido — R$5,00</li>
+                    </ul>
+                </div>
+
+                <div class="categoria show" data-categoria="bebidas-sem-alcool">
+                    <img src="./img/menu/bebidas.webp">
+                    <h3>Bebidas Sem Álcool</h3>
+                    <ul>
+                        <li>Coca-Cola — R$8,00</li>
+                        <li>Coca-Cola Zero — R$8,00</li>
+                        <li>Guaraná — R$8,00</li>
+                        <li>Fanta — R$8,00</li>
+                        <li>Sprite — R$8,00</li>
+                        <li>Schweppes Citrus — R$8,00</li>
+                        <li>H2O — R$8,00</li>
+                        <li>Água s/ Gás — R$5,00</li>
+                        <li>Água c/ Gás — R$7,00</li>
+                        <li>Suco Copo — R$8,00</li>
+                    </ul>
+                </div>
+
+                <div class="categoria show" data-categoria="bebidas-alcoolicas">
+                    <img src="./img/menu/cervejas.webp">
+                    <h3>Bebidas Alcoólicas</h3>
+                    <ul>
+                        <li>Skol Latão — R$9,00</li>
+                        <li>Devassa Latão — R$9,00</li>
+                        <li>Itaipava Latão — R$9,00</li>
+                        <li>Latão Original — R$10,00</li>
+                        <li>Amstel — R$9,00</li>
+                        <li>Heineken Long — R$13,00</li>
+                        <li>Budweiser Long — R$12,00</li>
+                        <li>Heineken 600ml — R$22,00</li>
+                        <li>Combo Heineken 600ml (4 unid.) — R$80,00</li>
+                        <li>Heineken Zero Long — R$13,00</li>
+                        <li>Brahma Zero Lata — R$10,00</li>
+                    </ul>
+                </div>
+
+                <div class="categoria show" data-categoria="destilados">
+                    <img src="./img/menu/destilados.webp">
+                    <h3>Bebidas Destiladas</h3>
+                    <ul>
+                        <li>Cachaça Especial (dose) — R$10,00</li>
+                        <li>Pitú — R$7,00</li>
+                        <li>51 — R$7,00</li>
+                        <li>Old Parr (dose) — R$25,00</li>
+                        <li>Teacher’s — R$15,00</li>
+                        <li>Red Label — R$20,00</li>
+                        <li>Red Black Label — R$25,00</li>
+                        <li>Gin — R$15,00</li>
+                        <li>Jack — R$15,00</li>
+                    </ul>
+                </div>
+
+                <div class="categoria show" data-categoria="drinks-alcool">
+                    <img src="./img/menu/drinks.webp">
+                    <h3>Drinks com Álcool</h3>
+                    <ul>
+                        <li>Caipirinha — R$15,00</li>
+                        <li>Caipirosca — R$25,00</li>
+                        <li>Coquetel de Frutas (da Estação) — R$25,00</li>
+                        <li>Coquetel no Abacaxi — R$30,00</li>
+                        <li>Drink Dreams — R$30,00</li>
+                        <li>Espanhol — R$30,00</li>
+                        <li>Pina Colada — R$30,00</li>
+                        <li>Gin Tônica — R$30,00</li>
+                        <li>Ciclame — R$30,00</li>
+                        <li>Aperol Spritz — R$35,00</li>
+                    </ul>
+                </div>
+
+                <div class="categoria show" data-categoria="drinks-sem-alcool">
+                    <img src="./img/menu/drinks.webp">
+                    <h3>Drinks Sem Álcool</h3>
+                    <ul>
+                        <li>Caipicente (Limão) — R$15,00</li>
+                        <li>Ventania (Frutas) — R$25,00</li>
+                        <li>Coquetel de Frutas — R$25,00</li>
+                        <li>Drink Dreams — R$30,00</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="./img/logotrans.webp" alt="Logo Ilha do Paraíso">
+                <p>Viva momentos inesquecíveis nas 9 Ilhas de Alagoas</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links úteis</h4>
+                <ul>
+                    <li><a href="/index.html#home">Home</a></li>
+                    <li><a href="/index.html#portifolio">Portfólio</a></li>
+                    <li><a href="/index.html#passeio">Passeios</a></li>
+                    <li><a href="cardapio.html">Cardápio</a></li>
+                    <li><a href="/index.html#reservar">Reservar</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contato">
+                <h4>Contato</h4>
+                <p>📍 Alagoas, Brasil</p>
+                <p>📞 (82) 9351-1294</p>
+                <p>📷 @ilhadoparaisorestof</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Ilha do Paraíso
+
+</body>
+
+</html>
